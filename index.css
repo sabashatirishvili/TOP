@@ -348,6 +348,45 @@ button > svg {
 .explore > a:hover {
   background-color: #374151;
 }
+
+#success-stories {
+  background-color: #151d2b;
+  color: #e5e7eb;
+}
+
+.page-container h2{
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.stories-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.story-card {
+  max-width: 36rem;
+  padding: 0 1.5rem;
+  padding-bottom: 2.25rem;
+  display:flex;
+}
+
+.profile {
+  width: 4rem;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.profile > img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
 @media only screen and (min-width: 640px) {
   .container {
     padding-left: 1.5rem;
@@ -380,6 +419,15 @@ button > svg {
   .course > img {
     width: 10rem;
     height: 10rem;
+  }
+
+  .profile {
+    width: 6rem;
+    display: flex;
+  }
+  
+  .story-card {
+    padding: 0;
   }
 }
 
@@ -438,5 +486,15 @@ button > svg {
   
   .courses {
     width: calc(83.333%);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .courses-container {
+    flex-flow: row wrap
+  }
+
+  .story-card {
+    width: 50%;
   }
 }
