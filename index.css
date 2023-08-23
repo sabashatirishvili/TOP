@@ -5,10 +5,12 @@
   text-decoration: none;
   font-family: "Inter", sans-serif;
   box-sizing: border-box;
+  color: inherit;
 }
 
 :root {
   background-color: #111827;
+  color: #d1d5db;
 }
 
 .container {
@@ -349,6 +351,10 @@ button > svg {
   background-color: #374151;
 }
 
+.contact > .logo-container {
+  display: block;
+}
+
 #success-stories {
   background-color: #151d2b;
   color: #e5e7eb;
@@ -371,8 +377,7 @@ button > svg {
 
 .story-card {
   max-width: 36rem;
-  padding: 0 1.5rem;
-  padding-bottom: 2.25rem;
+  padding: 0 1.5rem 2.25rem 1.5rem;
   display:flex;
 }
 
@@ -386,6 +391,186 @@ button > svg {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+}
+
+.story {
+  flex: 1 1 0%;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: underline;
+} 
+
+.story-text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+
+
+
+.name:hover {
+  text-decoration: none;
+}
+
+.page-container > p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding-top: 1rem;
+  text-decoration-line: underline;
+  color: #9ca3af;
+  text-align: center;;
+}
+
+.support {
+  flex: 1 1 0%;
+  margin: 0 auto;
+  max-width: 36rem;
+  padding: 2rem;
+  text-align: center;
+  color: #e5e7eb;
+}
+
+.support-us {
+  margin: 1.5rem 0;
+}
+
+.support-us > h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.support-us > p {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: #8b929d;
+}
+
+.information {
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  max-width: 80rem;
+}
+
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5rem;
+}
+
+.social {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1.5rem;
+}
+
+.contact > p {
+  font-size: .875rem;
+  font-weight: 400;
+  color: #caced5;
+}
+
+.social > a > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #6b7280;
+}
+
+.section {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-items: stretch;
+}
+
+.section > div {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+  margin-top: 2.5rem;
+  align-items:flex-start;
+  justify-content: flex-start;
+  gap: .75rem;
+}
+
+
+
+.section > div > p {
+  font-size: .875rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.section > div > a {
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.contact > .logo-container {
+  color: #e5e7eb;
+}
+
+.home > .page-container > a:hover {
+  background-color: #374151;
+}
+
+.button:hover {
+  background-color: #115e59;
+}
+
+.buttons > a > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.buttons {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.buttons > a {
+  padding: .75rem 1.5rem;
+  font-size: .875rem;
+  font-weight: 500;
+  min-width: 100px;
+}
+
+.learn-more {
+  border: 1px solid #4b5563;
+  border-radius: .375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f766e;
+  border-radius: .375rem;
+}
+
+.donate:hover {
+  background-color: #115e59;
+}
+
+.information > p {
+  padding-top: 2rem;
+  margin-top: 6rem;
+  border-top: 1px solid #29303d;
+  font-size: .75rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #c4c7ce;
 }
 @media only screen and (min-width: 640px) {
   .container {
@@ -427,7 +612,17 @@ button > svg {
   }
   
   .story-card {
-    padding: 0;
+    padding: 0 0 2.25rem 0;
+  }
+
+  .information {
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .contact > .logo-container {
+    color: #e5e7eb;
   }
 }
 
@@ -496,5 +691,15 @@ button > svg {
 
   .story-card {
     width: 50%;
+  }
+
+  .stories-container {
+    flex-flow: row wrap;
+  }
+
+  .information > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
